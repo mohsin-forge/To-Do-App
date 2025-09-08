@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro To-Do App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container glass">
+      <header>
+        <h1>To-Do App</h1>
+        <button id="themeToggle" title="Toggle Dark/Light">🌙</button>
+      </header>
+
+      <!-- Input Group -->
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Enter a new task..." />
+        <input type="date" id="taskDate" />
+        <select id="taskCategory">
+          <option>General</option>
+          <option>Work</option>
+          <option>Personal</option>
+        </select>
+        <button id="addBtn">➕ Add</button>
+      </div>
+
+      <!-- Tools Section -->
+      <div class="tools">
+        <input type="text" id="searchInput" placeholder="Search tasks..." />
+        <button id="clearAllBtn">Clear All</button>
+      </div>
+
+      <!-- Task List -->
+      <ul id="taskList"></ul>
+
+      <footer>
+        <p id="progress">Progress: 0%</p>
+      </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p id="modalMessage">Message goes here</p>
+        <button id="closeModal">OK</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
